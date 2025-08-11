@@ -1,6 +1,6 @@
 {
   "name": "@kalpalabs/voiceagent-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VoiceAgent TypeScript SDK",
   "type": "module",
   "main": "dist/index.js",
