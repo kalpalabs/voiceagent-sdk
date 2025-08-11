@@ -1,0 +1,29 @@
+{
+  "name": "@kalpalabs/voiceagent-sdk",
+  "version": "0.0.1",
+  "description": "VoiceAgent TypeScript SDK",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm run clean && tsc",
+    "prepare": "pnpm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "github:https://github.com/kalpalabs/voiceagent-sdk.git"
+}
