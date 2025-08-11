@@ -24,9 +24,7 @@ export class WebsocketHandler {
         const protocol = baseUrl.startsWith('https://') ? 'wss:' : 'ws:';
         // Strip http(s) scheme if present to form host for ws url
         const host = baseUrl.replace(/^https?:\/\//, '');
-        const finalUrl = `${protocol}//${host}/ws/speech?token=${this.apiKey}`;
-        console.log("finalUrl: ", finalUrl);
-        return finalUrl;
+        return `${protocol}//${host}/ws/speech?token=${this.apiKey}`;
     }
     close() {
         var _a;
