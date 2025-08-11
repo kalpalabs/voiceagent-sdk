@@ -131,11 +131,11 @@ These are the additional messages that you can handle in your code within `agent
   "type": "response_finished"
 }
 ```
-7. Latency message - TTFB latency of the current "turn" of conversation:
+7. Latency message - TTFB latency (in ms) of the current "turn" of conversation:
 ```json
 {
   "type": "latency",
-  "latency": <request_latency_in_ms>
+  "latency": 500
 }
 ```
 8. Error message:
@@ -151,7 +151,4 @@ These are the additional messages that you can handle in your code within `agent
   "type": "disconnect",
   "reason": "<disconnection_reason>"
 }
-
-## Future work
-1. Support assistant volume level control through agent
-2. Add support for tool calling through sdk
+```
