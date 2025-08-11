@@ -1,4 +1,10 @@
 # Kalpalabs VoiceAgent typescript sdk
+
+## Installation
+```shell
+npm i @kalpalabs/voiceagent-sdk
+```
+
 ## Call control
 ```jsx
 import { VoiceAgent } from '@kalpalabs/voiceagent-sdk';
